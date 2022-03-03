@@ -1,0 +1,32 @@
+.register
+{
+    width: 380px;
+    height: 450px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    border-radius: 10px;
+    color: rgb(14, 12, 12);
+    /* background-image: url("../images/Login.png"); */
+    background-color: rgb(250, 250, 250);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+h2{
+    margin-top: 45px;
+}
+input
+{
+    margin-left: 40px;
+    padding: 6px;
+   border-top-style: none;
+   border-left-style: none;
+   border-right-style: none;
+   border-bottom: 2px solid black;
+   width: 300px;
+}
+.bt
+{
+    width:300px;
+    margin-left: 40px;
+}

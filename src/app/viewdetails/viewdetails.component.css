@@ -1,0 +1,16 @@
+.tab {
+  margin: 70px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+  /* position: relative; */
+  width: 650px;
+  height: 100px;
+  margin-left: 350px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 10px 12px 20px 0 rgb(68 88 144 / 12%);
+}

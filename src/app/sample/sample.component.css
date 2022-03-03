@@ -1,0 +1,31 @@
+.sample
+{
+    width: 350px;
+    height: 350px; 
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    border-radius: 10px;
+    color: rgb(14, 12, 12);
+    background-image: url("../images/Login.png");
+    /* background-repeat:no-repeat; */
+    /* background-size: cover; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+select{
+    margin-top: 50px;
+    width: 225px;
+}
+input
+{
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 7px;
+}
+.bt
+{
+    width:300px;
+    margin-top: 35px;
+    margin-left: 10px;
+}

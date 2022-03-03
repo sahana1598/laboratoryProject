@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row register">
+    <div class="text-center">
+      <h2>Registration</h2>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="addData()">
+      <div class="mb-3">
+        <input type="text" class="form-control" formControlName="fname" name="fname" placeholder="Name" id="exampleInputtext" aria-describedby="emailHelp">
+        <span style="color: red;" *ngIf=" fname.invalid && fname.touched">Please fill name field</span>
+      </div>
+      <div class="mb-3">
+        <input type="email"  formControlName="email" name="email"  class="form-control" placeholder="EmailId" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span style="color: red;" *ngIf="email.invalid && email.touched"> Please fill the valid EmailId </span>
+      </div>
+      <div class="mb-3">
+        <input type="password" formControlName="password"  name="password"class="form-control" placeholder="Password" id="exampleInputPassword1">
+        <span style="color: red;" *ngIf="password.invalid && password.touched"> Please fill the valid Password </span>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" formControlName="role"  name="role" id="exampleInputtext" placeholder="Role" aria-describedby="emailHelp">
+        <span style="color: red;" *ngIf="role.invalid && role.touched">Please fill the valid Role</span>
+      </div>
+      <button type="submit"  class="btn btn-info bt">Submit</button>
+    </form> 
+  </div>
+</div>

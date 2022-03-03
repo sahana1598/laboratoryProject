@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row login">
+        <div class="text-center ">
+            <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
+            <h2>Login</h2>
+        </div>
+        <div class="col-8">
+            <form [formGroup]="form" (ngSubmit)="addLoginData()">
+                <div class="mb-3 ">
+                    <input type="email" class="box" formControlName="email" name="email" placeholder="EmailId"
+                        class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span style="color: red;" *ngIf="email.invalid && email.touched">Please Enter valid Email</span>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="box" formControlName="password" placeholder="Password" name="password"
+                        class="form-control" id="exampleInputPassword1">
+                    <span style="color: red;" *ngIf="password.invalid && password.touched">Please Enter valid Email</span>
+                </div>
+                <button type="submit" class="btn btn-info bt">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
